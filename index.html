@@ -1,88 +1,79 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kursoversikt | Norsats</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kursprogram | Norsats</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-black text-white font-sans min-h-screen flex flex-col justify-between">
+<body class="bg-black text-white font-sans">
   <!-- Header -->
   <header class="bg-neutral-900 shadow-md">
     <div class="max-w-6xl mx-auto p-4 flex items-center justify-between">
-      <a href="https://norsats.no">
-        <img src="../NorsatsLogoWide.webp" alt="Norsats logo" class="h-12 md:h-16" />
+      <a href="https://bbnbtc.github.io/">
+        <img src="NorsatsLogoWide.webp" alt="Norsats logo" class="h-12 md:h-16" />
       </a>
       <p class="text-gray-400 text-sm hidden md:block">Skapere av en sirkulær økonomi</p>
     </div>
   </header>
 
-  <!-- Innhold -->
-  <main class="flex-grow">
-    <section class="max-w-4xl mx-auto px-6 py-16 text-center">
-      <h1 class="text-3xl md:text-4xl font-bold mb-4">Kursoversikt</h1>
-      <p class="text-gray-300 mb-8">
-        Vår kursrekke er utviklet for å gi deg en dypere forståelse av hvordan ny økonomisk teknologi kan støtte mennesker og systemer i endring.
-        Kursene bygger på hverandre og strekker seg over cirka 6 måneder.
-        Hvert kurs varer i 2–3 dager (5–6 timer per dag) og gjennomføres i Oslo.
-      </p>
+  <!-- Intro -->
+  <section class="text-center px-6 py-20 max-w-4xl mx-auto">
+    <h1 class="text-4xl font-bold mb-6">Kursprogram – Offentlig sektor og ny teknologi</h1>
+    <p class="text-gray-300 text-lg mb-6">
+      Dette kurset er utviklet for deg som jobber med støtteordninger, økonomisk veiledning eller i kontakt med mennesker i krevende livssituasjoner. Kurset holdes hos <strong>Rebel i Oslo</strong> og består av tre sammenhengende nivåer som strekker seg over totalt seks måneder.
+    </p>
+    <p class="text-gray-400 mb-8">
+      Det anbefales å delta på hele kurspakken for å få full innsikt og progresjon, men det er også mulig å melde seg på enkeltmoduler. Undervisningen foregår over 5–6 timer per dag.
+    </p>
+  </section>
 
-      <div class="grid md:grid-cols-3 gap-4 mb-12">
-        <a href="#intro" class="bg-yellow-400 text-black font-semibold px-6 py-3 rounded hover:bg-yellow-300 transition">Introduksjon</a>
-        <a href="#avansert" class="bg-yellow-500 text-black font-semibold px-6 py-3 rounded hover:bg-yellow-400 transition">Avansert</a>
-        <a href="#ekspert" class="bg-yellow-600 text-black font-semibold px-6 py-3 rounded hover:bg-yellow-500 transition">Ekspert</a>
+  <!-- Kursbilde -->
+  <section class="px-6 mb-12">
+    <div class="max-w-4xl mx-auto">
+      <img src="kursbilde.jpg" alt="Kursdeltakere i Oslo" class="rounded-lg shadow-lg w-full object-cover max-h-[600px]">
+    </div>
+  </section>
+
+  <!-- Kursnivåer -->
+  <section class="bg-neutral-900 py-16 px-6 max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-10 text-left">
+      <div id="intro">
+        <h2 class="text-xl font-bold text-yellow-400 mb-2">1. Introduksjonskurs</h2>
+        <p class="text-gray-300">
+          En innføring i prinsippene bak Bitcoin, desentralisering og digitalt eierskap. Vi ser på samfunnsmessige konsekvenser og grunnleggende økonomisk forståelse.
+        </p>
       </div>
-    </section>
+      <div id="avansert">
+        <h2 class="text-xl font-bold text-yellow-500 mb-2">2. Avansert kurs</h2>
+        <p class="text-gray-300">
+          Dypdykk i verktøy og praksis: Lightning Network, digitale lommebøker, sikkerhet og integrasjon i offentlig forvaltning og NAV-relaterte strukturer.
+        </p>
+      </div>
+      <div id="ekspert">
+        <h2 class="text-xl font-bold text-yellow-600 mb-2">3. Ekspertkurs</h2>
+        <p class="text-gray-300">
+          Etter gjennomført modul vil du kunne fungere som faglig ressursperson i egen avdeling. Fokus på refleksjon, rådgivning og tverrfaglig innsikt.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Kursinnhold -->
-    <section id="intro" class="max-w-3xl mx-auto px-6 py-12 border-t border-gray-700">
-      <h2 class="text-2xl font-bold mb-4">Introduksjonskurs</h2>
-      <p class="text-gray-300 mb-4">
-        Et lavterskelkurs som gir deg grunnleggende innsikt i digitale verdier, Bitcoin, digitale lommebøker og individuell eierskap.
-        Du lærer hvordan økonomisk teknologi fungerer i praksis, og hvordan den kan brukes til å støtte mennesker i ulike livssituasjoner.
-        Kurset krever ingen forkunnskaper.
-      </p>
-      <p class="text-gray-400 italic">Neste planlagte gjennomføring: <strong>20.–22. august 2025</strong></p>
-    </section>
-
-    <section id="avansert" class="max-w-3xl mx-auto px-6 py-12 border-t border-gray-700">
-      <h2 class="text-2xl font-bold mb-4">Avansert kurs</h2>
-      <p class="text-gray-300 mb-4">
-        Dette kurset bygger videre på introduksjonen og går dypere inn i teknologi som Lightning Network, digitale signaturer og selvforvaltning.
-        Du lærer hvordan slike løsninger utfordrer og forbedrer eksisterende strukturer innen støtte, ansvar og tillitsforhold.
-      </p>
-      <p class="text-gray-400 italic">Neste planlagte gjennomføring: <strong>24.–26. september 2025</strong></p>
-    </section>
-
-    <section id="ekspert" class="max-w-3xl mx-auto px-6 py-12 border-t border-gray-700">
-      <h2 class="text-2xl font-bold mb-4">Ekspertkurs</h2>
-      <p class="text-gray-300 mb-4">
-        Ekspertkurset retter seg mot deg som ønsker å bli en ressursperson på temaet i din avdeling.
-        Du lærer om node-drift, BTCPay Server, digitale betalingsstrukturer og prinsipper for sikker og robust teknologi i praksis.
-        Kurset gir deg trygghet i møte med fremtidens digitale utfordringer.
-      </p>
-      <p class="text-gray-400 italic">Neste planlagte gjennomføring: <strong>6.–8. november 2025</strong></p>
-    </section>
-
-    <!-- Kontakt -->
-    <section id="kontakt" class="max-w-4xl mx-auto px-6 py-12 border-t border-gray-700 text-left">
-      <h2 class="text-2xl font-bold mb-4">Påmelding og spørsmål</h2>
-      <p class="text-gray-300 mb-4">
-        Meld deg på eller ta kontakt dersom du har spørsmål om innhold, målgruppe eller praktiske forhold.
-      </p>
-      <form action="https://formsubmit.co/bjarne.borgan@norsats.no" method="POST" class="space-y-4">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="navn" placeholder="Fullt navn" required class="w-full p-3 rounded bg-neutral-800 text-white border border-gray-600">
-        <input type="email" name="epost" placeholder="E-postadresse" required class="w-full p-3 rounded bg-neutral-800 text-white border border-gray-600">
-        <textarea name="melding" rows="5" placeholder="Melding eller spørsmål" class="w-full p-3 rounded bg-neutral-800 text-white border border-gray-600"></textarea>
-        <button type="submit" class="bg-yellow-500 text-black font-semibold px-6 py-3 rounded hover:bg-yellow-400 transition">Send</button>
-      </form>
-    </section>
-  </main>
+  <!-- Påmelding -->
+  <section class="py-20 px-6 max-w-2xl mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-6">Meld deg på</h2>
+    <p class="text-gray-300 mb-4">Fyll ut skjemaet for å sikre deg plass. Vi tar kontakt med deg for praktisk informasjon.</p>
+    <form action="https://formsubmit.co/bjarne.borgan@norsats" method="POST" class="space-y-4">
+      <input type="text" name="navn" placeholder="Fullt navn" required class="w-full p-3 rounded text-black">
+      <input type="email" name="epost" placeholder="E-postadresse" required class="w-full p-3 rounded text-black">
+      <textarea name="melding" placeholder="Kommentar eller spørsmål (valgfritt)" class="w-full p-3 rounded text-black"></textarea>
+      <button type="submit" class="bg-yellow-400 text-black px-6 py-3 rounded font-semibold hover:bg-yellow-300">Send påmelding</button>
+    </form>
+  </section>
 
   <!-- Footer -->
   <footer class="bg-neutral-900 text-sm text-gray-500 p-4 flex justify-between items-center">
-    <p>&copy; 2025 Norsats | Bygger framtiden én node om gangen</p>
+    <p>&copy; 2025 Norsats | Kurs og kunnskap for fremtidens forvaltning</p>
     <a href="https://norsats.no" class="text-yellow-400 hover:text-yellow-300">norsats.no</a>
   </footer>
 </body>

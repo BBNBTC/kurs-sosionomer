@@ -131,6 +131,15 @@
   <input type="text" name="navn" placeholder="Fullt navn" required class="w-full p-3 rounded text-black">
   <input type="email" name="epost" placeholder="E-postadresse" required class="w-full p-3 rounded text-black">
   <input type="text" name="arbeidsplass" placeholder="Arbeidsplass / Institusjon" required class="w-full p-3 rounded text-black">
+  
+  <!-- Rullegardinmeny for kursvalg -->
+  <select name="kursvalg" required class="w-full p-3 rounded text-black">
+    <option value="">Velg ønsket kursdato</option>
+    <option value="20.–21. august 2025">Introduksjonskurs – 20.–21. august 2025</option>
+    <option value="29.–30. september 2025">Introduksjonskurs – 29.–30. september 2025</option>
+    <option value="Ønsker informasjon om senere datoer">Ønsker informasjon om senere datoer</option>
+  </select>
+
   <textarea name="melding" placeholder="Kommentar eller spørsmål (valgfritt)" class="w-full p-3 rounded text-black"></textarea>
   <button type="submit" class="bg-yellow-400 text-black px-6 py-3 rounded font-semibold hover:bg-yellow-300">Send påmelding</button>
 </form>

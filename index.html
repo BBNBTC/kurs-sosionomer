@@ -53,22 +53,27 @@
     <!-- Påmeldingsskjema -->
     <section id="påmelding">
       <h2 class="text-2xl font-semibold mb-4">Meld deg på kurset</h2>
-      <form action="#" method="POST" class="space-y-4 bg-white p-6 rounded-lg shadow">
+      <form action="https://formsubmit.co/bjarne@norsats.no" method="POST" class="space-y-4 bg-white p-6 rounded-lg shadow">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="Ny påmelding til kurs for sosionomer">
+        <input type="hidden" name="_template" value="box">
+        <input type="hidden" name="_next" value="https://norsats.no/takk-for-pamelding">
+
         <div>
           <label for="navn" class="block font-medium text-gray-700">Fullt navn</label>
-          <input type="text" id="navn" name="navn" required class="mt-1 w-full border border-gray-300 rounded px-4 py-2" />
+          <input type="text" id="navn" name="Navn" required class="mt-1 w-full border border-gray-300 rounded px-4 py-2" />
         </div>
         <div>
           <label for="epost" class="block font-medium text-gray-700">E-post</label>
-          <input type="email" id="epost" name="epost" required class="mt-1 w-full border border-gray-300 rounded px-4 py-2" />
+          <input type="email" id="epost" name="E-post" required class="mt-1 w-full border border-gray-300 rounded px-4 py-2" />
         </div>
         <div>
           <label for="arbeidssted" class="block font-medium text-gray-700">Arbeidssted</label>
-          <input type="text" id="arbeidssted" name="arbeidssted" class="mt-1 w-full border border-gray-300 rounded px-4 py-2" />
+          <input type="text" id="arbeidssted" name="Arbeidssted" class="mt-1 w-full border border-gray-300 rounded px-4 py-2" />
         </div>
         <div>
           <label for="beskjed" class="block font-medium text-gray-700">Melding (valgfritt)</label>
-          <textarea id="beskjed" name="beskjed" rows="3" class="mt-1 w-full border border-gray-300 rounded px-4 py-2"></textarea>
+          <textarea id="beskjed" name="Melding" rows="3" class="mt-1 w-full border border-gray-300 rounded px-4 py-2"></textarea>
         </div>
         <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">Send påmelding</button>
       </form>

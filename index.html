@@ -3,89 +3,104 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kurs for sosionomer – Bitcoin og NAV</title>
+  <title>Kurs for Sosionomer – Norsats</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body class="bg-black text-white font-sans min-h-screen flex flex-col justify-between">
   <!-- Header -->
-  <header class="bg-white shadow p-6">
-    <div class="max-w-4xl mx-auto">
-      <h1 class="text-3xl font-bold">Kurs for Sosionomer</h1>
-      <p class="text-lg text-gray-600 mt-1">Faglig utvikling i møte med fremtidens økonomiske virkelighet</p>
+  <header class="bg-neutral-900 shadow-md">
+    <div class="max-w-6xl mx-auto p-4 flex items-center justify-between">
+      <a href="https://norsats.no">
+        <img src="../NorsatsLogoWide.webp" alt="Norsats logo" class="h-12 md:h-16" />
+      </a>
+      <p class="text-gray-400 text-sm hidden md:block">Skapere av en sirkulær økonomi</p>
     </div>
   </header>
 
   <!-- Innhold -->
-  <main class="max-w-4xl mx-auto p-6 space-y-12">
-
-    <!-- Om kurset -->
+  <main class="flex-grow max-w-4xl mx-auto px-6 py-12 space-y-12">
     <section>
-      <h2 class="text-2xl font-semibold">Om kurset</h2>
-      <p class="mt-2 text-gray-700">
-        Dette kurset er utviklet spesielt for sosionomer, rådgivere og ansatte i offentlig sektor som jobber med økonomisk veiledning og sosialt arbeid. 
-        I en tid med økende økonomisk press og digitalisering tilbyr vi faglig påfyll knyttet til alternative økonomiske systemer, og hvordan disse påvirker både individ og velferdsstat. 
-        Bitcoin er et voksende fenomen, og vi gir deg en grundig og kritisk innføring i hvordan teknologien fungerer, og hvordan det kan påvirke NAV-relaterte rutiner og klientenes hverdag.
+      <h1 class="text-3xl font-bold mb-4">Kurs for Sosionomer</h1>
+      <p class="text-gray-300">
+        Kurset er utviklet for sosionomer og ansatte i offentlig sektor som ønsker å forstå hvordan Bitcoin og desentralisert teknologi påvirker økonomisk rådgivning, NAV-rutiner og sosialt arbeid.
       </p>
     </section>
 
-    <!-- Hva du lærer -->
     <section>
-      <h2 class="text-2xl font-semibold">Hva du lærer</h2>
-      <ul class="list-disc ml-6 mt-2 text-gray-700 space-y-2">
-        <li>Hva Bitcoin er – og hva det ikke er</li>
-        <li>Hvordan Bitcoin og digitale lommebøker fungerer i praksis</li>
-        <li>Risiko, rettigheter og personvern i digitale økonomier</li>
-        <li>Hvordan økonomisk autonomi påvirker sosialt arbeid</li>
-        <li>Forstå NAVs rutiner for økonomisk rådgivning i lys av ny teknologi</li>
-        <li>Hvordan du som fagperson kan møte klienter med kunnskap og trygghet</li>
+      <h2 class="text-2xl font-semibold mb-2">Kursstruktur og innhold</h2>
+      <p class="text-gray-300">
+        Kurset er delt inn i tre nivåer: introduksjon, avansert og ekspert. Det er anbefalt å ta alle tre for en helhetlig forståelse.
+      </p>
+
+      <div class="mt-6 space-y-6">
+        <div>
+          <h3 class="text-xl font-bold text-yellow-400">1. Introduksjonskurs</h3>
+          <p class="text-gray-300">
+            Grunnleggende innføring i Bitcoin, digitale lommebøker, økonomisk autonomi og personvern. Vi ser på hvordan ny teknologi påvirker NAV-relaterte rutiner og klienters handlingsrom.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-bold text-yellow-500">2. Avansert kurs</h3>
+          <p class="text-gray-300">
+            Dypere forståelse av Bitcoin og Lightning Network, samt hvordan teknologi utfordrer offentlige systemer. Du lærer hvordan dette griper inn i sosialt arbeid, etikk og maktstrukturer.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-bold text-yellow-600">3. Ekspertkurs</h3>
+          <p class="text-gray-300">
+            For deg som ønsker å veilede andre. Du lærer om node-drift, BTCPay Server og hvordan man bygger robuste systemer for brukere i sårbare situasjoner. Kurset inneholder praktiske oppgaver og etiske refleksjoner.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-neutral-800 p-6 rounded-lg shadow">
+      <h2 class="text-xl font-bold mb-2 text-yellow-400">Praktisk informasjon</h2>
+      <ul class="list-disc ml-6 text-gray-300 space-y-2">
+        <li>📍 Kursene holdes i Oslo sentrum</li>
+        <li>⏱️ Hver kursdag varer ca 5–6 timer, med pauser</li>
+        <li>📅 Introduksjonskurset går over 3 dager – de andre varierer</li>
+        <li>✅ Det anbefales å ta alle tre kurs for å få fullt utbytte</li>
       </ul>
     </section>
 
-    <!-- Målgruppe -->
-    <section class="bg-yellow-100 p-6 rounded-lg shadow">
-      <h2 class="text-xl font-bold mb-2">Hvem passer kurset for?</h2>
-      <p class="text-gray-800">
-        Dette kurset passer for deg som jobber i NAV, barnevern, rusomsorg, psykisk helse, kriminalomsorg eller i annen form for sosialt arbeid. 
-        Kurset krever ingen forkunnskaper om teknologi – bare et ønske om å forstå hvordan samfunnets økonomiske landskap er i endring, og hva det betyr for fagfeltet.
-      </p>
-    </section>
-
-    <!-- Påmeldingsskjema -->
+    <!-- Påmelding -->
     <section id="påmelding">
-      <h2 class="text-2xl font-semibold mb-4">Meld deg på kurset</h2>
-      <form action="https://formsubmit.co/bjarne.borgan@norsats.no" method="POST">
-  <label for="navn">Fullt navn:</label><br>
-  <input type="text" id="navn" name="navn" required><br><br>
-
-  <label for="epost">E-post:</label><br>
-  <input type="email" id="epost" name="email" required><br><br>
-
-  <label for="arbeidssted">Arbeidssted:</label><br>
-  <input type="text" id="arbeidssted" name="arbeidssted"><br><br>
-
-  <label for="beskjed">Melding:</label><br>
-  <textarea id="beskjed" name="message" rows="4"></textarea><br><br>
-
-  <button type="submit">Send påmelding</button>
-</form>
-
-
+      <h2 class="text-2xl font-semibold mb-4">Meld deg på</h2>
+      <form action="https://formsubmit.co/bjarne.borgan@norsats.no" method="POST" class="space-y-4 bg-neutral-900 p-6 rounded-lg shadow">
+        <div>
+          <label for="navn" class="block font-medium text-white">Fullt navn</label>
+          <input type="text" id="navn" name="navn" required class="mt-1 w-full border border-gray-700 bg-black text-white rounded px-4 py-2" />
+        </div>
+        <div>
+          <label for="epost" class="block font-medium text-white">E-post</label>
+          <input type="email" id="epost" name="email" required class="mt-1 w-full border border-gray-700 bg-black text-white rounded px-4 py-2" />
+        </div>
+        <div>
+          <label for="arbeidssted" class="block font-medium text-white">Arbeidssted</label>
+          <input type="text" id="arbeidssted" name="arbeidssted" class="mt-1 w-full border border-gray-700 bg-black text-white rounded px-4 py-2" />
+        </div>
+        <div>
+          <label for="beskjed" class="block font-medium text-white">Melding (valgfritt)</label>
+          <textarea id="beskjed" name="message" rows="4" class="mt-1 w-full border border-gray-700 bg-black text-white rounded px-4 py-2"></textarea>
+        </div>
+        <button type="submit" class="bg-yellow-500 text-black px-6 py-3 rounded hover:bg-yellow-400 transition">Send påmelding</button>
+      </form>
     </section>
 
-    <!-- Kontaktinfo -->
-    <section id="kontakt" class="bg-gray-100 p-6 rounded-lg shadow">
-      <h2 class="text-xl font-bold mb-2">Kontakt oss</h2>
-      <p class="text-gray-700">Har du spørsmål, eller ønsker du å tilpasse kurset til din arbeidsplass?</p>
-      <ul class="mt-2 text-gray-700">
-        <li><strong>E-post:</strong> bjarne@norsats.no</li>
-        <li><strong>Adresse:</strong> Norsats AS, Ringvegen 34, 2050 Jessheim</li>
-      </ul>
+    <!-- Kontakt -->
+    <section class="text-center pt-12 border-t border-gray-700">
+      <p class="text-gray-400">
+        📧 Spørsmål? Kontakt oss på <a href="mailto:bjarne.borgan@norsats.no" class="underline text-yellow-400 hover:text-yellow-300">bjarne.borgan@norsats.no</a>
+      </p>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer class="text-center p-4 text-gray-500 text-sm mt-12">
-    &copy; 2025 Kursinitiativet for Sosionomer | Drevet av Norsats
+  <footer class="text-center text-sm text-gray-500 p-4 bg-neutral-900">
+    &copy; 2025 Norsats | Bygger framtiden én node om gangen
   </footer>
 </body>
 </html>
